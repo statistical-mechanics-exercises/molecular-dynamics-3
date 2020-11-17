@@ -6,17 +6,17 @@ Once these steps of initialisation are completed you then need to write a loop t
 
 1. The velocities, ![](https://render.githubusercontent.com/render/math?math=v(t)), are updated by a half timestep using:
 
-![](https://render.githubusercontent.com/render/math?math=v\left(t+\frac{1}{2}\delta\right)=v(t)%2B\frac{1}{2}\delta\F(t))
+![](https://render.githubusercontent.com/render/math?math=v\left(t%2B\frac{1}{2}\delta\right)=v(t)%2B\frac{1}{2}\delta\F(t))
 
 2. The positions, ![](https://render.githubusercontent.com/render/math?math=x(t)), are updated a full timestep using:
 
-![](https://render.githubusercontent.com/render/math?math=x\left(t+\delta\right)=x(t)%2Bv\left(t+\frac{1}{2}\delta\right)\delta)
+![](https://render.githubusercontent.com/render/math?math=x\left(t%2B\delta\right)=x(t)%2Bv\left(t%2B\frac{1}{2}\delta\right)\delta)
 
-3. The forces, ![](https://render.githubusercontent.com/render/math?math=F(t+\delta)), are calculated at the new position.
+3. The forces, ![](https://render.githubusercontent.com/render/math?math=F(t%2B\delta)), are calculated at the new position.
 
 4. The new values for the forces are used to update the velocities another half-timestep as follows:
 
-![](https://render.githubusercontent.com/render/math?math=v\left(t+\delta\right)=v\left(t+\frac{1}{2}\delta\right)%2B\frac{1}{2}\delta\F(t))
+![](https://render.githubusercontent.com/render/math?math=v\left(t%2B\delta\right)=v\left(t+\frac{1}{2}\delta\right)%2B\frac{1}{2}\delta\F(t))
 
 Your task is to implement this algorithm in `main.py`.  As in the previous exercise, you need to start by writing a function called `potential` as you did in the previous exercise to calculate the potential and the forces.
 
