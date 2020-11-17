@@ -16,7 +16,7 @@ Once these steps of initialisation are completed you then need to write a loop t
 
 4. The new values for the forces are used to update the velocities another half-timestep as follows:
 
-![](https://render.githubusercontent.com/render/math?math=v\left(t%2B\delta\right)=v\left(t+\frac{1}{2}\delta\right)%2B\frac{1}{2}\delta\F(t))
+![](https://render.githubusercontent.com/render/math?math=v\left(t%2B\delta\right)=v\left(t%2B\frac{1}{2}\delta\right)%2B\frac{1}{2}\delta\F(t))
 
 Your task is to implement this algorithm in `main.py`.  As in the previous exercise, you need to start by writing a function called `potential` as you did in the previous exercise to calculate the potential and the forces.
 
