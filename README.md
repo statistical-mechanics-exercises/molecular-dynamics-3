@@ -17,7 +17,7 @@ Once these steps of initialisation are completed you then need to write a loop t
 4. The new values for the forces are used to update the velocities another half-timestep as follows:
 
 $$
-v\left(t + \delta\right)=v\left(t%2B\frac{1}{2}\delta\right) + \frac{1}{2} \delta F(t+\delta)
+v\left(t + \delta\right)=v\left(t + B\frac{1}{2}\delta\right) + \frac{1}{2} \delta F(t+\delta)
 $$
 ![](https://render.githubusercontent.com/render/math?math=v\left(t%2B\delta\right)=v\left(t%2B\frac{1}{2}\delta\right)%2B\frac{1}{2}\delta\F(t%2B\delta))
 
